@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Carousel from './Carousel'; // Carousel 컴포넌트를 불러옵니다.
+import ReactDOM from 'react-dom/client'; // React 18에서는 react-dom/client 사용
+import Carousel from './Carousel'; // Carousel 컴포넌트 import
 
 // 기본 아이템 설정
 const items = [
@@ -36,9 +36,10 @@ const items = [
   }
 ];
 
-ReactDOM.render(
+// React 18에서 사용하는 방식으로 수정
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <Carousel items={items} />
-  </React.StrictMode>,
-  document.getElementById('root') // 'root' 아이디를 가진 div에 렌더링합니다.
+  </React.StrictMode>
 );
