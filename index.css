@@ -48,10 +48,11 @@ a {
 
 .desktop .line {
   position: absolute;
-  top: 46px;
-  left: 610px;
+  top: 20px;
+  left: 594px;
   width: 647px;
   height: 16px;
+  length: 22.3px;
 }
 
 .desktop .ellipse {
