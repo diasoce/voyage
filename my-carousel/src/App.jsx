@@ -1,7 +1,27 @@
+import Carousel from '.Carousel'
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+
+
+function App() {
+  return (
+    <div style={{ 
+      height: '600px', 
+      position: 'relative', 
+      backgroundColor: '#000',
+      display: 'flex',          // 가로 정렬을 위해 추가
+      justifyContent: 'center', // 가로 가운데 정렬
+      alignItems: 'center'      // 세로 가운데 정렬
+    }}>
+      <Carousel 
+        baseWidth={330} // Carousel.jsx 소스에 맞춰 width 대신 baseWidth 사용 [cite: 1]
+        round 
+      />
+    </div>
+  );
+}
 
 function App() {
   const [count, setCount] = useState(0)
