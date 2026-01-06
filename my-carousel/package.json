@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "npm run build && git add docs && git commit -m 'Deploy to docs' && git push origin main"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "motion": "^12.24.0",
