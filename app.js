@@ -1,11 +1,10 @@
-// src/App.js
 import React from 'react';
-import Carousel from './Carousel';  // Carousel을 불러오기
+import Carousel from './Carousel';  // 올바른 경로로 수정
 
 function App() {
   return (
     <div style={{ height: '600px', position: 'relative' }}>
-      <Carousel round={true} />  {/* Carousel 컴포넌트 사용 */}
+      <Carousel baseWidth={330} round={true} />  {/* 하나로 통합, props 추가 */}
     </div>
   );
 }
