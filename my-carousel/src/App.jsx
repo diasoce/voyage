@@ -5,20 +5,20 @@ function App() {
   return (
     <div style={{ 
       position: 'absolute',
-      top: '50%',
+      top: '70%',
       left: '50%',
       transform: 'translate(-50%, -50%)',
-      zIndex: 999,
-      width: '330px',
-      height: '600px',
+      zIndex: 100,
+      width: '600px',
+      height: '830px',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
       backgroundColor: 'transparent', // 배경색을 지워야 뒤의 원들이 보입니다
       pointerEvents: 'none'
     }}>
-      <div style={{ width: '330px', height: '600px', pointerEvents: 'auto' }}>
-        <Carousel baseWidth={330} round loop={true} autoplay={true} />
+      <div style={{ width: '600px', height: '830px', pointerEvents: 'auto' }}>
+        <Carousel baseWidth={600} round loop={true} autoplay={true} />
       </div>
     </div>
   );

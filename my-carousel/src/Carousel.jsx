@@ -7,32 +7,32 @@ import './Carousel.css';
 
 const DEFAULT_ITEMS = [
   {
-    title: 'Text Animations',
-    description: 'Cool text animations for your projects.',
+    title: '동유럽',
+    description: '2019. 12. 20 ~ 2019. 12. 29',
     id: 1,
     icon: <FiFileText className="carousel-icon" />
   },
   {
-    title: 'Animations',
-    description: 'Smooth animations for your projects.',
+    title: '스페인',
+    description: '2024. 1. 4 ~ 2024. 1. 12',
     id: 2,
     icon: <FiCircle className="carousel-icon" />
   },
   {
-    title: 'Components',
-    description: 'Reusable components for your projects.',
+    title: '일본-1',
+    description: '2025. 6. 20 ~ 2025. 6. 23',
     id: 3,
     icon: <FiLayers className="carousel-icon" />
   },
   {
-    title: 'Backgrounds',
-    description: 'Beautiful backgrounds and patterns for your projects.',
+    title: '일본-2',
+    description: '2026. 1. 27 ~ 2026. 1. 30',
     id: 4,
     icon: <FiLayout className="carousel-icon" />
   },
   {
-    title: 'Common UI',
-    description: 'Common UI components are coming soon!',
+    title: '그 다음은?',
+    description: 'coming soon!',
     id: 5,
     icon: <FiCode className="carousel-icon" />
   }

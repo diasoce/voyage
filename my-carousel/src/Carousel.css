@@ -35,7 +35,7 @@
 }
 
 .carousel-item.round {
-  background-color: #0d0716;
+  background-color: #515c65;
   position: relative;
   bottom: 0.1em;
   border: 1px solid #555;
@@ -73,18 +73,18 @@
 
 .carousel-icon-container {
   display: flex;
-  height: 28px;
-  width: 28px;
+  height: 60px;
+  width: 60px;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: 30%;
   background-color: #fff;
 }
 
 .carousel-icon {
-  height: 16px;
-  width: 16px;
-  color: #060010;
+  height: 25px;
+  width: 25px;
+  color: #505d68;
 }
 
 .carousel-item-content {
@@ -94,13 +94,13 @@
 
 .carousel-item-title {
   margin-bottom: 4px;
-  font-weight: 900;
-  font-size: 18px;
+  font-weight: 1200;
+  font-size: 100px;
   color: #fff;
 }
 
 .carousel-item-description {
-  font-size: 14px;
+  font-size: 30px;
   color: #fff;
 }
 
