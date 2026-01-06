@@ -31,7 +31,13 @@ a {
   min-height: 1024px;
   position: relative;
 }
-
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #21282d; /* 기본 배경색 */
+}
 .text-wrapper {
   position: absolute;
   top: -42px;
