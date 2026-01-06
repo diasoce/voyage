@@ -17,7 +17,7 @@
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   border: 1px solid #555;
   border-radius: calc(var(--outer-r) - var(--p-distance));
