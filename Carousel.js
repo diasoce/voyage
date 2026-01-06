@@ -3,7 +3,13 @@ import { motion, useMotionValue, useTransform } from 'motion/react';
 // replace icons with your own if needed
 import { FiCircle, FiCode, FiFileText, FiLayers, FiLayout } from 'react-icons/fi';
 
-import './Carousel.css';
+import Carousel from './Carousel'
+
+<div style={{ height: '600px', position: 'relative' }}>
+  <Carousel
+    round
+  />
+</div>
 
 const DEFAULT_ITEMS = [
   {
