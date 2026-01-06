@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://diasoce.github.io/voyage/",
+  "homepage": "https://diasoce.github.io/voyage/dist",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
