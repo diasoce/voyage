@@ -107,9 +107,22 @@ html, body, #root {
   width: 100%;
   background-color: #21282d; /* 기본 배경색 */
 }
+.bodytext {
+  position: absolute;
+  top: 225px;
+  left: 50px;
+  width: 1500px;
+  font-family: "SlowGothic", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 119px;
+  letter-spacing: -2px;
+  line-height: 87px;
+  opacity: 0.1;
+}
 .text-wrapper {
   position: absolute;
-  top: 0px;
+  top: 110px;
   left: 50px;
   width: 715px;
   font-family: "SlowGothic", Helvetica;
@@ -122,16 +135,16 @@ html, body, #root {
 
 .desktop .line {
   position: absolute;
-  top: 61px;
+  top: 171px;
   left: 440px;
   width: 1000px;
   height: 18px;
 }
 
 .desktop .ellipse {
-  right: 130px;
+  right: 110px;
   position: absolute;
-  top: 66.5px;
+  top: 177.5px;
   width: 12px;
   height: 12px;
   background-color: #ffffff;
@@ -140,9 +153,9 @@ html, body, #root {
 }
 
 .desktop .div {
-  right: 90px;
+  right: 80px;
   position: absolute;
-  top: 66.5px;
+  top: 177.5px;
   width: 12px;
   height: 12px;
   background-color: #ffffff;
@@ -153,7 +166,7 @@ html, body, #root {
 .desktop .ellipse-2 {
   right: 50px;
   position: absolute;
-  top: 66.5px;
+  top: 177.5px;
   width: 12px;
   height: 12px;
   background-color: #ffffff;
