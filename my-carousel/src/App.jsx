@@ -10,9 +10,16 @@ function App() {
       transform: 'translate(-50%, -50%)',
       zIndex: 999,
       width: '330px',
-      height: '600px'
+      height: '600px',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: 'transparent', // 배경색을 지워야 뒤의 원들이 보입니다
+      pointerEvents: 'none'
     }}>
-      <Carousel baseWidth={330} round loop={true} autoplay={true} />
+      <div style={{ width: '330px', height: '600px', pointerEvents: 'auto' }}>
+        <Carousel baseWidth={330} round loop={true} autoplay={true} />
+      </div>
     </div>
   );
 }
