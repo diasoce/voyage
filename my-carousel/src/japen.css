@@ -1,0 +1,95 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+.desktop {
+  background-color: #21282d;
+  overflow: hidden;
+  width: 100%;
+  min-width: 1440px;
+  min-height: 1024px;
+  position: relative;
+}
+
+.desktop .rectangle {
+  position: absolute;
+  top: 58px;
+  left: 73px;
+  width: 1294px;
+  height: 908px;
+  object-fit: cover;
+}
+
+.desktop .text-wrapper {
+  position: absolute;
+  top: -23px;
+  left: 1042px;
+  width: 474px;
+  transform: rotate(0.75deg);
+  font-family: "KoPubWorldBatang-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 200px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .element {
+  position: absolute;
+  top: 364px;
+  left: 912px;
+  width: 194px;
+  height: 194px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.desktop .vector {
+  position: absolute;
+  top: 132px;
+  left: 245px;
+  width: 287px;
+  height: 239px;
+}
+
+.desktop .group {
+  position: absolute;
+  top: 562px;
+  left: 166px;
+  width: 275px;
+  height: 275px;
+}
+
+.desktop .image {
+  top: -2px;
+  left: -6px;
+  width: 287px;
+  height: 287px;
+  position: absolute;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.desktop .img {
+  top: 4px;
+  left: 4px;
+  width: 268px;
+  height: 268px;
+  position: absolute;
+  aspect-ratio: 1;
+  object-fit: cover;
+}

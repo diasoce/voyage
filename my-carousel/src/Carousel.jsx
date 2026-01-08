@@ -5,6 +5,7 @@ import CountUp from './CountUp.jsx';
 import imgcloud from './Component 1.svg';
 import imgplane from './plane1.png';
 import imgmem from './mem.svg';
+import imgaft from './after.svg'
 import './Carousel.css';
 
 const DEFAULT_ITEMS = [
@@ -221,6 +222,20 @@ export default function Carousel({
               position: 'absolute', width: '700px', height: 'auto', top: '-30px', left: '-110px'
             }}
           />
+          <motion.img
+            src={imgaft}
+            initial={{ opacity: 0, y: 100, display: 'none' }}
+            animate={{ opacity: 1, y: 0 , display: 'block' }}
+            transition={{ duration: 1.2, ease: "easeOut", delay: 1.0, display: { delay: 1.0 } }}
+            onTap={() => {
+                window.location.href = "./japen.html"; // 같은 창에서 이동
+              }}
+            onClick={() => {
+              window.location.href = "./japen.html"; // 터치가 안 먹힐 경우를 대비
+              }}
+            style={{
+              position: 'absolute', width: '100px', height: 'auto', top: '155px', right: '-500px', pointerEvents: 'auto'
+            }}/>
           {/* 이미지 2 */}
           <motion.img 
           src={imgplane}
@@ -292,9 +307,9 @@ export default function Carousel({
           className="count-up-text"
         />
       </div>
-      </div>
-    )}
+        </div>
+      )}
 
-    </div>
-  );
-}
+      </div>
+    );
+  }
