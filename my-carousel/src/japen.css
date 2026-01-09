@@ -16,22 +16,28 @@ button:focus-visible {
 a {
   text-decoration: none;
 }
+
 .desktop {
   background-color: #21282d;
   overflow: hidden;
+  position: relative;
   width: 100%;
   min-width: 1440px;
   min-height: 1024px;
   position: relative;
 }
 
-.desktop .rectangle {
+.desktop .rectangle-9 {
   position: absolute;
-  top: 58px;
-  left: 73px;
-  width: 1294px;
-  height: 908px;
+  top: 5px;
+  left: 50%;
+  margin-left: -600px;
+  width: 1200px;
+  height: 720px;
+  align-items: center;
   object-fit: cover;
+  border-radius: 50px;
+  z-index: 1;
 }
 
 .desktop .text-wrapper {
@@ -48,14 +54,24 @@ a {
   line-height: normal;
 }
 
-.desktop .element {
+.desktop .bigcat {
   position: absolute;
-  top: 364px;
-  left: 912px;
-  width: 194px;
-  height: 194px;
+  top: 200px;
+  left: 857px;
+  width: 260px;
+  height: 260px;
   aspect-ratio: 1;
   object-fit: cover;
+  z-index: 5;
+}
+
+.desktop .japen {
+  position: absolute;
+  top: -35px;
+  right: 130px;
+  width: 287px;
+  height: 239px;
+  z-index: 5;
 }
 
 .desktop .vector {
@@ -66,12 +82,13 @@ a {
   height: 239px;
 }
 
-.desktop .group {
+.desktop .lantern {
   position: absolute;
-  top: 562px;
-  left: 166px;
+  top: 400px;
+  left: 250px;
   width: 275px;
   height: 275px;
+  z-index: 5;
 }
 
 .desktop .image {
@@ -92,4 +109,184 @@ a {
   position: absolute;
   aspect-ratio: 1;
   object-fit: cover;
+}
+
+.desktop .Vector {
+  position: absolute;
+  top: 52px;
+  left: 380px;
+  width: 200px;
+  height: 187px;
+  z-index: 4;
+}
+
+.desktop .Vector-1 {
+  position: absolute;
+  top: 155px;
+  left: 405px;
+  width: 50px;
+  height: 44px;
+  object-fit: cover;
+  z-index: 6;
+}
+
+.desktop .Vector-2 {
+  position: absolute;
+  top: 92px;
+  left: 470px;
+  width: 50px;
+  height: 44px;
+  object-fit: cover;
+  z-index: 7;
+}
+
+.desktop .Vector-3 {
+  position: absolute;
+  top: 48px;
+  left: 360px;
+  width: 60px;
+  height: 56px;
+  object-fit: cover;
+  z-index: 8;
+}
+
+.desktop .Vector-4 {
+  position: absolute;
+  top: 210px;
+  left: 550px;
+  width: 54px;
+  height: 44px;
+  z-index: 6;
+}
+
+.desktop .cat3 {
+  position: absolute;
+  top: 540px;
+  left: 750px;
+  width: 222px;
+  height: 222px;
+  z-index: 3;
+}
+.desktop .cat1 {
+  position: absolute;
+  top: 540px;
+  left: 861px;
+  width: 222px;
+  height: 222px;
+  z-index: 4;
+}
+
+.desktop .cat2 {
+  position: absolute;
+  top: 540px;
+  left: 639px;
+  width: 222px;
+  height: 222px;
+  z-index: 4;
+}
+
+.desktop .f2 {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: -17px;
+  left: 390px;
+  width: 150px;
+  height: 150px;
+  z-index: 5;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s;
+  }
+
+.desktop .f3 {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 22px;
+  left: 495px;
+  width: 150px;
+  height: 150px;
+  z-index: 5;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s;
+  }
+
+.desktop .f4 {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 85px;
+  left: 430px;
+  width: 150px;
+  height: 150px;
+  z-index: 5;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s;
+  }
+.desktop .f5 {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 138px;
+  left: 577px;
+  width: 150px;
+  height: 150px;
+  z-index: 5;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s;
+  }
+
+.desktop .Vector-1:hover ~ .f4{
+  visibility: visible !important;
+  opacity: 1;
+}
+.desktop .Vector-2:hover ~ .f3{
+  visibility: visible !important;
+  opacity: 1;
+}
+.desktop .Vector-3:hover ~ .f2{
+  visibility: visible !important;
+  opacity: 1;
+}
+.desktop .Vector-4:hover ~ .f5{
+  visibility: visible !important;
+  opacity: 1;
+}
+
+.desktop .f1 {
+  position: absolute;
+  top: 150px;
+  left: 130px;
+  width: 726px;
+  height: 371px;
+  z-index: 25;
+  transform: translateX(-100vw);
+  /* 이동 시간을 조금 더 길게(0.8s) 잡아야 자연스럽습니다 */
+  transition: opacity 0.8s ease-in-out, 
+              transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), /* 부드러운 감속 효과 */
+              visibility 0.8s;
+  }
+.desktop .bigcat:hover ~ .f1{
+  transform: translateX(0);
+  transition: opacity 0.8s ease-in-out, 
+              transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes slideOutLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100vw); /* 왼쪽 화면 밖 100% 지점 */
+  }
+}
+
+/* 2. 대상 요소 스타일 */
+.desktop .original {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 1520px;
+  height: 725px;
+  z-index: 10;
+
+  /* 페이지 로드 후 0.5초 대기했다가 1초 동안 애니메이션 실행 */
+  /* forwards: 애니메이션이 끝난 후 사라진 상태를 유지함 */
+  animation: slideOutLeft 2s ease-in-out 0s forwards;
 }

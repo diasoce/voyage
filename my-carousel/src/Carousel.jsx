@@ -226,7 +226,7 @@ export default function Carousel({
             src={imgaft}
             initial={{ opacity: 0, y: 100, display: 'none' }}
             animate={{ opacity: 1, y: 0 , display: 'block' }}
-            transition={{ duration: 1.2, ease: "easeOut", delay: 1.0, display: { delay: 1.0 } }}
+            transition={{ duration: 1.2, ease: "easeOut", delay: 12.0, display: { delay: 12.0 } }}
             onTap={() => {
                 window.location.href = "./japen.html"; // 같은 창에서 이동
               }}
@@ -313,3 +313,5 @@ export default function Carousel({
       </div>
     );
   }
+
+  
